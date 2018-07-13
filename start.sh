@@ -5,4 +5,5 @@
 # if we dont' do it in Doockerfle,
 # build fails with message saying it cannot
 # be created
-s6-mkdir /run/s6
+
+#s6-mkdir /run/s6
