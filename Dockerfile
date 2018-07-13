@@ -48,7 +48,7 @@ RUN chown -R root:root /run
 RUN chmod -R g+rw /var
 RUN chown -R root:root /var
 
-RUN  mkdir /var/run/s6
+RUN mkdir /var/run/s6
 
 # ports and volumes
 EXPOSE 32400 32400/udp 32469 32469/udp 5353/udp 1900/udp
