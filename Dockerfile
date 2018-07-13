@@ -42,6 +42,9 @@ RUN \
 # add local files
 COPY root/ /
 
+RUN chmod -R g+rw /run
+RUN chown -R root:root /run
+
 RUN chmod -R g+rw /var
 RUN chown -R root:root /var
 
