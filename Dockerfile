@@ -39,6 +39,9 @@ RUN \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
 
+# an attempt to create /var/run/s6
+VOLUME [/run]
+
 # add local files
 COPY root/ /
 
