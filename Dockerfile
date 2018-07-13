@@ -45,7 +45,7 @@ VOLUME [/run]
 # add local files
 COPY root/ /
 
-#RUN mkdir /run/s6
+RUN s6-mkdir /run/s6
 RUN chmod -R g+rw /run
 RUN chown -R root:root /run
 
